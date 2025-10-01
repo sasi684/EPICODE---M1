@@ -1,0 +1,47 @@
+Laboratorio 1 - Salvatore Triunfo
+
+- PERSONAGGIO:
+Il personaggio in questione si chiama Frollo e fa parte di una squadra di biscotti che combattono altri dolci corrotti dal cioccolato.
+
+
+- ATTRIBUTES:
+	1) PUNTI SALUTE: L'attributo che regola la quantità di HP del personaggio
+	2) PUNTI MAGIA: L'attributo che stabilisce quanti incantesimi può lanciare il personaggio
+	3) PUNTI FORZA: L'attributo che definisce la quantità di danni arrecabili
+	4) PUNTI DIFESA: L'attributo che definisce la quantità di danni bloccabili
+	5) DENARO: Valuta del mondo di gioco utilizzata per oggetti e miglioramenti
+
+
+- STATES:
+	- PUNTI SALUTE:
+		MAX HP --> 100 di punti salute
+		GOOD --> 60-99 di punti salute
+		DANGER --> 30-59 di punti salute
+		CRITICAL --> 1-29 di punti salute
+		DEAD --> 0% di punti salute
+		
+	- PUNTI MAGIA:
+		MAX MP --> 100 di punti magia
+		FOCUSED --> 60-99 di punti magia
+		TIRED --> 1-59 di punti magia
+		EXAUSTED --> 0 di punti magia
+		
+	- PUNTI FORZA:
+		0 --> Nessun danno fisico arrecabile
+		1-99 --> Possibile arrecare danno proporzionatamente al valore
+	
+	- PUNTI DIFESA:
+		0 --> Nessuna riduzione dei danni ricevuti
+		1-99 --> Danni ridotti proporzionatamente al valore
+		
+	- DENARO:
+		NONE --> Non si possiede denaro da spendere
+		1-999 --> TOT monete da spendere
+
+
+- ACTIONS:
+	- FROLLATA: Attacco che va a ridurre i PUNTI SALUTE del bersaglio seconda la formula [2*PUNTI FORZA*(10/PUNTI DIFESA bersaglio)] e passa il turno
+	- ACQUISTO POZIONE: Usare 100 DENARO per comprare una pozione che rigenera 30 PUNTI SALUTE e passa il turno
+	- PIOGGIA DI LATTE: Attacco magico che consuma 30 PUNTI MAGIA del personaggio per ridurre del 40% i PUNTI DIFESA del bersaglio e passa il turno
+	- VELATA DI ZUCCHERO: Incantesimo di difesa che consuma 40 PUNTI MAGIA per aumentare del 20% i PUNTI DIFESA del team del personaggio e passa il turno
+	- FOCUS: Ricarica 60 PUNTI MAGIA del personaggio e passa il turno
