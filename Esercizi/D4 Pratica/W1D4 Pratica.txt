@@ -1,0 +1,14 @@
+Laboratorio 2 - Salvatore Triunfo
+
+- GIOCO:
+Monopoli --> Un gioco di società in cui i giocatori competono per arricchirsi e sottrarre il denaro agli altri giocatori mediante l'acquisto di proprietà dal tabellone di gioco, impadronendosi di determinate caselle.
+
+- MECCANICA PRE-FIX:
+Per ogni giro intorno al tabellone, i giocatori hanno diritto ad incassare 200€ dalla banca per far aumentare il denaro in circolazione tra i giocatori.
+
+- MECCANICA POST-FIX:
+Anziché cedere 200€ al giocatore, per ogni giro completato verrà richiesto di pagare una tassa del 10% delle proprietà attualmente in possesso del giocatore. Per bilanciare il gioco e continuare a far fluire sempre più soldi tra i giocatori, le caselle due i tassazione vengono sostituite da delle caselle di cashback da 200€ e 300€.
+
+-DINAMICA GENERATA:
+I giocatori tenderanno ad acquistare meno proprietà del solito per evitare di pagare tasse troppo alte.
+Il gioco favorirà quindi i giocatori più poveri creando bilanciamento anche in partite troppo squilibrate, allungando di conseguenza le sessioni di gioco.
